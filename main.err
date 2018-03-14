@@ -1,0 +1,5 @@
+>>> Warning 202 "main.c" Line 117(23,29): Variable never used:   thermo
+>>> Warning 202 "main.c" Line 117(30,37): Variable never used:   thermo1
+      Memory usage:   ROM=74%      RAM=18% - 27%
+      0 Errors,  2 Warnings.
+Build Successful.

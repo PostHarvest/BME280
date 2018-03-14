@@ -1,0 +1,112 @@
+
+ROM used:   12094/16384 (74%)
+            12094/16384 (74%) including unused fragments
+
+            3.0 Average locations per line
+            13.7 Average locations per statement
+
+RAM used:   135/768 (18%) at main() level
+            205/768 (27%) worst case
+
+Stack used: 5 worst case (4 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  224    96  11  main.c
+  664     0   0  C:\Program Files (x86)\PICCV5025\Devices\18F248.h
+  465   137  15  C:\Program Files (x86)\PICCV5025\Drivers\can-18xxx8.c
+  377     0   0  C:\Program Files (x86)\PICCV5025\Drivers\can-18xxx8.h
+  432   169  19  BME280.c
+ 1351   359  41  C:\Program Files (x86)\PICCV5025\Drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICCV5025\Drivers\stddef.h
+  423   125  14  C:\Program Files (x86)\PICCV5025\Drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICCV5025\Drivers\ctype.h
+----- -----
+ 3996   886 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     38   0    1             @delay_ms1
+0    220   1    1   1216  5.3  can_init
+0     48   0    0    255  2.3  can_set_baud
+0     34   0    2     76  3.1  can_set_mode
+0    304   1   13   1128  6.5  can_set_id
+0    482   2   14    762  9.7  can_get_id
+0    204   1   17   1074  8.6  can_putd
+ Inline        14   1626  7.1  can_getd
+0     72   0    3             @I2C_READ_1
+0     72   0    1             @I2C_WRITE_1
+0      8   0    0     32  1.0  init_BME280
+0     68   0    1    181  3.5  BME280Begin
+0     34   0    0     78  1.6  BME280SetSampling
+0     92   0    2    186  2.8  BME280ReadByte
+0    132   1    7    310  4.3  BME280Read16
+0     32   0    5             @MUL1616
+0     46   0    5    147  4.0  BME280Read16_LE
+0     10   0    1     42  1.7  BME280ReadS16_LE
+0     58   0    2    102  1.8  BME280WriteByte
+0     72   0    6    194  4.3  BME280ReadDig_H4
+0    266   1    2    743  3.4  BME280Calibration
+0    198   1    0    783  3.4  BurstRead
+0     28   0    2     89  3.3  BME280ReadingCalibration
+0    826   3   19    630  9.0  BME280ReadTemperature
+0     84   0   14             @MUL3232
+0     52   0    4             @DTOF
+0    346   1   14             @DIVFF
+0    142   1   13             @DIV3232
+0   1928   8   20   1173  7.2  Calculate_Pess
+0     88   0    5             @SDTOF
+0    618   3   16             @ADDFF
+0    242   1   11             @MULFF
+0     72   0    2             @SITOF
+0     56   0    2             @ITOF
+0    120   0   10             @FLT
+0   1444   6   20   1237 10.7  BME280ReadHumidity
+0     12   0    0     17  1.3  isr_timer2
+0   2124   9   47   6464  9.8  MAIN
+0     36   0    0             @const1259
+0     34   0    2             @PSTRINGC_38400_31766_31767
+0     14   0    0             @const1261
+0     20   0    0             @const1262
+0     32   0    3             @PSTRINGCN_38400_31766_31767
+0     64   0    5             @FTOSD
+0    384   2   13             @PRINTF_L32D_38400_31766_31767FPFPF
+0     24   0    0             @const1270
+0     22   0    0             @const1271
+0     38   0    0             @const1272
+0     40   0    3             @DIV88
+0    108   0    2             @PRINTF_U_38400_31766_31767
+0    170   1   12             @PRINTF_L32U_38400_31766_31767
+0     30   0    0             @const1281
+0     14   0    0             @const1282
+0     66   0    2             @PRINTF_X_38400_31766_31767
+0     18   0    0             @const1288
+0     26   0    0             @const1289
+0     34   0    0             @const1290
+0     18   0    0             @const1293
+0     26   0    0             @const1294
+0     34   0    0             @const1295
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               24
+    Statements              886
+    Comments                1880
+    Volume (V)              29054
+    Difficulty (D)          113.3
+    Effort to implement (E) 3290880
+    Time to implement (T)   50 hours, 47 minutes
+    Est Delivered Bugs (B)  7
+    Cyclomatic Complexity   25
+    Maintainability (MI)    121
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-000AC   166  0  
+000AE-03FFE  11924  4286  
+
+
+
